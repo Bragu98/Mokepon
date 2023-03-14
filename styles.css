@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #100720;
+}
+
+#seleccion-de-mascota {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.titulo {
+    font-family: 'Rubik Dirt', cursive;
+    color: #FFC23C;
+    font-size: 104px;
+    font-weight: normal;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px;
+}
+
+
+.subtitulo {
+    color: #FA2FB5;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 33px;
+    background: #31087B;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 33px 10px;
+    border: 1px solid #FA2FB5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FA2FB5;
+    font-weight: initial;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: #FFC23C;
+    color: #100720;
+    border: #31087B;
+}
+
+#boton-mascota {
+    height: 53px;
+    width: 200px;
+    border: 2px solid #31087B;
+    background: #FFC23C;
+    margin-top: 50px;
+    color: #100720;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+#seleccion-de-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    background-color: #31087B;
+    color: #FA2FB5;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.orden-de-ataques {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#mensajes {
+    width: 300px;
+    background-color: #31087B;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resultado {
+    margin-bottom: 5px;
+    color: #FA2FB5;
+}
+
+#boton-reiniciar {
+    border: 1px solid #FFC23C;
+    background-color: transparent;
+    color: #FFC23C;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+}
+
+.columnas {
+    height: 190px;
+    width: 300px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    color: #FFC23C;
+    background-color: transparent;
+    margin: 10px;
+    border: 1px solid #31087B;
+    border-radius: 20px;
+}
+
+.columna-jugador, .columna-enemigo {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+#ataques-del-jugador, #ataques-del-enemigo {
+    color: #FA2FB5;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .orden-de-ataques {
+        flex-direction: column;
+    }
+}
